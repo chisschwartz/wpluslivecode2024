@@ -1,0 +1,22 @@
+#counter {
+  background-color: black;
+  color: white;
+  font: "Courier New";
+  font-size: 80px;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: justify;
+  text-align-last: right;
+  font-weight: bold;
+}
+
+body {
+  margin-left: 20px;
+}
+
+#button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
