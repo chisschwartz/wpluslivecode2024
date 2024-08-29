@@ -1,19 +1,17 @@
 import React from "react";
 import UFOSightingItem from "./UFOSightingItem";
 
-export default function UFOSightingsList() {
+export default function UFOSightingsList(props) {
   return (
     <ul>
-      <UFOSightingItem
-        date="Oct 1, 1994"
-        description="Flying Saucer"
-        location="Denver, CO"
-      />
-      <UFOSightingItem
-        date="July 4th, 2015"
-        description="Floating Lights"
-        location="Butte, MT"
-      />
+      {props.sightingsList.map((sighting) => (
+        <UFOSightingItem
+          key={sighting.id}
+          date={sighting.date}
+          description={sighting.description}
+          location={sighting.location}
+        />
+      ))}
     </ul>
   );
 }
